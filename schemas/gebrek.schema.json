@@ -1,0 +1,202 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Class schema for Gebrek",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "b1174b71-1fe1-4e1f-a470-bea6eda1d145"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/b1174b71-1fe1-4e1f-a470-bea6eda1d145"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "attributes": {
+            "type": "object",
+            "properties": {
+              "identificatie": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "7a70040f-37bf-4eb6-9011-ccda7b22d779"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.crow.nl/imbor/term/7a70040f-37bf-4eb6-9011-ccda7b22d779"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "veiligheidsmaatregelId": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "3843bf40-56df-46e4-a6fa-8094235b1e40"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/3843bf40-56df-46e4-a6fa-8094235b1e40"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "gebrek": {
+                "$ref": "./domainvalues/gebrek.schema.json"
+              },
+              "plaatsaanduidingGebrek": {
+                "$ref": "./domainvalues/plaatsaanduidingGebrek.schema.json"
+              },
+              "gevolgTakbreuk": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "1525d2c8-6150-4203-b3f5-41f12c40ab53"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/1525d2c8-6150-4203-b3f5-41f12c40ab53"
+                  },
+                  "Value": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "gevolgStambreuk": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "6156b2a5-df7b-47cb-977f-8d411d45f5f5"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/6156b2a5-df7b-47cb-977f-8d411d45f5f5"
+                  },
+                  "Value": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "gevolgInstabiliteit": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "d249db13-839e-4c44-9bee-7832361b90de"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/d249db13-839e-4c44-9bee-7832361b90de"
+                  },
+                  "Value": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "gevolgVerkeersincident": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "d12e9d32-74d0-42b5-aed2-a9f03a05f61c"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/d12e9d32-74d0-42b5-aed2-a9f03a05f61c"
+                  },
+                  "Value": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "identificatie",
+              "gebrek",
+              "plaatsaanduidingGebrek",
+              "gevolgTakbreuk",
+              "gevolgStambreuk",
+              "gevolgInstabiliteit",
+              "gevolgVerkeersincident"
+            ]
+          }
+        },
+        "required": [
+          "attributes"
+        ]
+      }
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "items"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for statusToezicht",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "2ae635d4-303e-4cfd-b78c-eefd748312e9"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/2ae635d4-303e-4cfd-b78c-eefd748312e9"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "e894c4fc-f4c4-41b8-aca7-f58512339447",
+                "600df5fa-55ea-43a3-af83-a68b4802389e",
+                "c44b4386-3426-4dcf-963e-5a80e37c0701",
+                "c796d48b-34ef-4c8c-ab31-b91c9b79bf8a",
+                "6de98fb0-4e55-4cf8-9768-1997d5479655"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/e894c4fc-f4c4-41b8-aca7-f58512339447",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/600df5fa-55ea-43a3-af83-a68b4802389e",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/c44b4386-3426-4dcf-963e-5a80e37c0701",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/c796d48b-34ef-4c8c-ab31-b91c9b79bf8a",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6de98fb0-4e55-4cf8-9768-1997d5479655"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Geen toezicht",
+                "Nog te beoordelen",
+                "Goedgekeurd",
+                "Afgekeurd, geen herstel",
+                "Afgekeurd, te herstellen"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

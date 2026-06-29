@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for boomstamdiameterklasseActueel",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "2c0447cd-a835-4b14-a1db-8af8586b2e94"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/2c0447cd-a835-4b14-a1db-8af8586b2e94"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "d249db13-839e-4c44-9bee-7832361b90de",
+                "bdae325c-442e-444f-acea-e646df18214f",
+                "b3651153-0088-4cb7-b414-e70dfa587852",
+                "66d5a4b6-b98b-4752-bdb1-ba3e901c5b70",
+                "edf431eb-8252-4c56-8218-778424dc2362",
+                "986609ed-ef00-4433-94c7-2132a737ed41",
+                "83aee104-3758-4395-b753-5215cbb141ea",
+                "c0b54e57-eb5a-4911-807a-9749cc022e42",
+                "ea953b44-18f9-4914-bd84-387ad90546bc",
+                "5127e4d9-6ad3-4a43-a6b5-a683e6e22468"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d249db13-839e-4c44-9bee-7832361b90de",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/bdae325c-442e-444f-acea-e646df18214f",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/b3651153-0088-4cb7-b414-e70dfa587852",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/66d5a4b6-b98b-4752-bdb1-ba3e901c5b70",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/edf431eb-8252-4c56-8218-778424dc2362",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/986609ed-ef00-4433-94c7-2132a737ed41",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/83aee104-3758-4395-b753-5215cbb141ea",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/c0b54e57-eb5a-4911-807a-9749cc022e42",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/ea953b44-18f9-4914-bd84-387ad90546bc",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/5127e4d9-6ad3-4a43-a6b5-a683e6e22468"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Niet bepaald",
+                "Niet (volledig) te beoordelen",
+                "tot 10 cm.",
+                "10 tot 20 cm.",
+                "20 tot 30 cm.",
+                "30 tot 50 cm.",
+                "50 tot 75 cm.",
+                "75 tot 100 cm.",
+                "100 tot 125 cm.",
+                "125 tot 150 cm.",
+                "150 cm. en groter "
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

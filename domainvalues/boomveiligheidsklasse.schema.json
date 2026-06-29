@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for boomveiligheidsklasse",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "9899adc9-b2d3-4706-95e3-32798b29aba6"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/9899adc9-b2d3-4706-95e3-32798b29aba6"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "32cb6bfe-32d4-43d6-be3e-fd79758065b8",
+                "ef9a3d3a-22f9-4325-b3c3-b12e2dcb6485",
+                "12d9c44f-cf54-4252-a511-5c56126ea5d1"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/32cb6bfe-32d4-43d6-be3e-fd79758065b8",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/ef9a3d3a-22f9-4325-b3c3-b12e2dcb6485",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/12d9c44f-cf54-4252-a511-5c56126ea5d1"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Niet bepaald",
+                "Risicoboom",
+                "Attentieboom",
+                "Boom zonder gebreken"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

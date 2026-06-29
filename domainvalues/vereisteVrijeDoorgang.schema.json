@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for vereisteVrijeDoorgang",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "d4581ebf-d4b6-42b8-ad2a-dbe2c767f108"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.crow.nl/imbor/def/d4581ebf-d4b6-42b8-ad2a-dbe2c767f108"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "6434404a-7d1e-4f0b-bb76-145f40cf81fd",
+                "015eac67-b64a-4128-a1cb-3745d206aa87",
+                "e9bd8e8c-095a-4dc8-9444-ce7d2d0331cc",
+                "c1663976-862a-401e-9d19-bfef5ab79dd4",
+                "dc56b269-2e15-4f57-92f6-81baa173673f",
+                "1e0601ea-82dc-45d8-90ef-259c73bb0052",
+                "0bf9aad7-1630-4e41-8bd1-83ba35ec3b2a",
+                "29491361-ab54-49b8-8816-320b803b1aaa",
+                "0828dab3-2ae3-4e41-a5f3-e0e8c49f560b",
+                "792af62a-cf69-45b9-aad1-a74732e98930",
+                "e63f33f2-0c5a-4b81-9b37-d1d46d9dcdb1",
+                "63c160cf-83c0-4070-8ab7-b4c488be2df1"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.crow.nl/imbor/id/domeinwaarden/6434404a-7d1e-4f0b-bb76-145f40cf81fd",
+                "https://data.crow.nl/imbor/id/domeinwaarden/015eac67-b64a-4128-a1cb-3745d206aa87",
+                "https://data.crow.nl/imbor/id/domeinwaarden/e9bd8e8c-095a-4dc8-9444-ce7d2d0331cc",
+                "https://data.crow.nl/imbor/id/domeinwaarden/c1663976-862a-401e-9d19-bfef5ab79dd4",
+                "https://data.crow.nl/imbor/id/domeinwaarden/dc56b269-2e15-4f57-92f6-81baa173673f",
+                "https://data.crow.nl/imbor/id/domeinwaarden/1e0601ea-82dc-45d8-90ef-259c73bb0052",
+                "https://data.crow.nl/imbor/id/domeinwaarden/0bf9aad7-1630-4e41-8bd1-83ba35ec3b2a",
+                "https://data.crow.nl/imbor/id/domeinwaarden/29491361-ab54-49b8-8816-320b803b1aaa",
+                "https://data.crow.nl/imbor/id/domeinwaarden/0828dab3-2ae3-4e41-a5f3-e0e8c49f560b",
+                "https://data.crow.nl/imbor/id/domeinwaarden/792af62a-cf69-45b9-aad1-a74732e98930",
+                "https://data.crow.nl/imbor/id/domeinwaarden/e63f33f2-0c5a-4b81-9b37-d1d46d9dcdb1",
+                "https://data.crow.nl/imbor/id/domeinwaarden/63c160cf-83c0-4070-8ab7-b4c488be2df1"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "2,5 m +m.v. rondom",
+                "2,5/0 m + m.v.",
+                "4,5 m +m.v. rondom",
+                "4,5/0 m + m.v.",
+                "4,5/2,5 m + m.v.",
+                "6,5 m +m.v. rondom",
+                "6,5/0 m + m.v.",
+                "6,5/2,5 m + m.v.",
+                "6,5/4,5 m + m.v.",
+                "Niet (volledig) te beoordelen",
+                "Niet bepaald",
+                "Niet van toepassing"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

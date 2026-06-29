@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SUF FeatureCollection Schema (SUF Handboek Bomen 2026)",
+  "description": "Root schema for a SUF GeoJSON FeatureCollection containing Boom features.",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "FeatureCollection"
+    },
+    "versieSuf": {
+      "type": "object",
+      "properties": {
+        "GUID": {
+          "type": "string",
+          "const": "71a8d958-c3b6-440e-97cb-0965bece41ab"
+        },
+        "UriMetadata": {
+          "type": "string",
+          "const": "https://data.norminstituutbomen.nl/hb/def/71a8d958-c3b6-440e-97cb-0965bece41ab"
+        },
+        "Value": {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "const": "c0b409a3-fa19-427b-9a61-c0daeb6caf7d"
+            },
+            "Uri": {
+              "type": "string",
+              "const": "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/c0b409a3-fa19-427b-9a61-c0daeb6caf7d"
+            },
+            "Description": {
+              "type": "string",
+              "const": "SUF Handboek Bomen 2026"
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "GUID",
+        "UriMetadata",
+        "Value"
+      ],
+      "additionalProperties": false
+    },
+    "tijdstipRegistratie": {
+      "type": "string"
+    },
+    "crs": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "name"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "properties"
+      ]
+    },
+    "domeinwaarden": {
+      "type": "object"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "$ref": "./boom.schema.json"
+      }
+    }
+  },
+  "required": [
+    "type",
+    "versieSuf",
+    "tijdstipRegistratie",
+    "crs",
+    "features"
+  ]
+}

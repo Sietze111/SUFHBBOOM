@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for beheerbaarheid",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "cb66fc1d-7f44-44be-8eb1-a5658b64fd4c"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/cb66fc1d-7f44-44be-8eb1-a5658b64fd4c"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "d249db13-839e-4c44-9bee-7832361b90de",
+                "c519570b-3846-4331-81f9-da619aceb453",
+                "3d87fb5a-add4-42e4-9954-74181f90ee11",
+                "b1323060-3c52-432b-a229-07282f2941e1",
+                "ac3044d2-60e2-4b3b-a495-391323fa1b9f",
+                "f34e055a-4595-4436-9828-ea808eebb500"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d249db13-839e-4c44-9bee-7832361b90de",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/c519570b-3846-4331-81f9-da619aceb453",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/3d87fb5a-add4-42e4-9954-74181f90ee11",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/b1323060-3c52-432b-a229-07282f2941e1",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/ac3044d2-60e2-4b3b-a495-391323fa1b9f",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/f34e055a-4595-4436-9828-ea808eebb500"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Niet bepaald",
+                "Niet (volledig) te beoordelen",
+                "Goed",
+                "Voldoende",
+                "Onvoldoende",
+                "Slecht",
+                "Zeer slecht"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

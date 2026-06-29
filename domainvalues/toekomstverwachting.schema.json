@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for toekomstverwachting",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "eb7ff327-5e79-4918-9341-69e09a134940"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/eb7ff327-5e79-4918-9341-69e09a134940"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "d249db13-839e-4c44-9bee-7832361b90de",
+                "cb2da36d-5d7d-42b6-80ae-6a685f2fc79e",
+                "b24dcdab-4293-4298-a2cb-e03360893468",
+                "7645b258-1489-4f7a-9b80-1f78b4d53091",
+                "96aa3452-9e02-451b-bbad-8af31a91fc2c"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d249db13-839e-4c44-9bee-7832361b90de",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/cb2da36d-5d7d-42b6-80ae-6a685f2fc79e",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/b24dcdab-4293-4298-a2cb-e03360893468",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/7645b258-1489-4f7a-9b80-1f78b4d53091",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/96aa3452-9e02-451b-bbad-8af31a91fc2c"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Niet bepaald",
+                "Niet (volledig) te beoordelen",
+                "≥ 15 jaar",
+                "5 tot 15 jaar",
+                "1 tot 5 jaar",
+                "< 1 jaar"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

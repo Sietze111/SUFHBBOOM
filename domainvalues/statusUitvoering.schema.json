@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for statusUitvoering",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "245876b4-5eea-4f98-8eae-30637b55a3a8"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/245876b4-5eea-4f98-8eae-30637b55a3a8"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "80fa60cf-ff82-48b0-afbd-89d828163de3",
+                "3be557d9-c3cf-4993-a5ca-b4914dc771de",
+                "d293464c-1e49-4b2a-a349-9c61b2714444",
+                "56067d52-462b-41b9-b0ef-a91e5f065d53",
+                "1ce7b63e-3101-4bb6-a07e-63e66550c463",
+                "06c04bc7-739e-4ba0-996c-b7662791865d"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/80fa60cf-ff82-48b0-afbd-89d828163de3",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/3be557d9-c3cf-4993-a5ca-b4914dc771de",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d293464c-1e49-4b2a-a349-9c61b2714444",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/56067d52-462b-41b9-b0ef-a91e5f065d53",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/1ce7b63e-3101-4bb6-a07e-63e66550c463",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/06c04bc7-739e-4ba0-996c-b7662791865d"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Nog uit te voeren",
+                "Uitgevoerd",
+                "Uitgevoerd met afwijkingen",
+                "Geannuleerd",
+                "Uitgesteld",
+                "Niet uitgevoerd"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

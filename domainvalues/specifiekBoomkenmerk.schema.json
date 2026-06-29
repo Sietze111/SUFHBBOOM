@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for specifiekBoomkenmerk",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "895ec324-1514-41ba-9113-5f1554842cd9"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.crow.nl/imbor/def/895ec324-1514-41ba-9113-5f1554842cd9"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "e63f33f2-0c5a-4b81-9b37-d1d46d9dcdb1",
+                "792af62a-cf69-45b9-aad1-a74732e98930",
+                "e92a0795-4c4d-43cd-88eb-28bb8b5ed87c",
+                "71a59f77-32e7-4140-b9f0-549c385c1335",
+                "39bec7f7-49c5-4c47-a29a-738679543ac0",
+                "c9aa3150-abce-413c-b700-3946863e290b",
+                "c39d362d-93b0-4768-9473-b94b6b24d6c0",
+                "adecbbf6-0f18-43fc-9530-8bb8459deb24",
+                "75b136b3-fbdf-4573-b814-d68dd5e27d80",
+                "4d30b2c3-0c8e-4854-8ab5-234f3e095a52",
+                "bcbcb864-7710-4ca6-8a04-7b9a772ddcac",
+                "dea39894-069d-48ec-8b7e-9f1b960ec73e",
+                "58bafe8a-4fba-4416-a907-a7a4c11d3083",
+                "780ab0c3-1ca3-4acd-8bf8-a18b8d07e86e",
+                "0806ffaa-e829-42b9-aebf-5509a31bf99e",
+                "8b6fea63-b008-438e-8768-0dfa719f5469",
+                "548194b4-dde7-45b6-a5b8-2d6eb6ecb2b0",
+                "956124a7-fd03-4c9a-8ea4-df9e6fbf7538",
+                "adee9fea-7b09-4981-aa5f-d9f636d35ebe",
+                "7569fd23-4c33-43c1-9b28-21d683f40b58",
+                "156eb2bf-81fc-4b06-bb0e-790b7ee09cf9"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.crow.nl/imbor/id/domeinwaarden/e63f33f2-0c5a-4b81-9b37-d1d46d9dcdb1",
+                "https://data.crow.nl/imbor/id/domeinwaarden/792af62a-cf69-45b9-aad1-a74732e98930",
+                "https://data.crow.nl/imbor/id/domeinwaarden/e92a0795-4c4d-43cd-88eb-28bb8b5ed87c",
+                "https://data.crow.nl/imbor/id/domeinwaarden/71a59f77-32e7-4140-b9f0-549c385c1335",
+                "https://data.crow.nl/imbor/id/domeinwaarden/39bec7f7-49c5-4c47-a29a-738679543ac0",
+                "https://data.crow.nl/imbor/id/domeinwaarden/c9aa3150-abce-413c-b700-3946863e290b",
+                "https://data.crow.nl/imbor/id/domeinwaarden/c39d362d-93b0-4768-9473-b94b6b24d6c0",
+                "https://data.crow.nl/imbor/id/domeinwaarden/adecbbf6-0f18-43fc-9530-8bb8459deb24",
+                "https://data.crow.nl/imbor/id/domeinwaarden/75b136b3-fbdf-4573-b814-d68dd5e27d80",
+                "https://data.crow.nl/imbor/id/domeinwaarden/4d30b2c3-0c8e-4854-8ab5-234f3e095a52",
+                "https://data.crow.nl/imbor/id/domeinwaarden/bcbcb864-7710-4ca6-8a04-7b9a772ddcac",
+                "https://data.crow.nl/imbor/id/domeinwaarden/dea39894-069d-48ec-8b7e-9f1b960ec73e",
+                "https://data.crow.nl/imbor/id/domeinwaarden/58bafe8a-4fba-4416-a907-a7a4c11d3083",
+                "https://data.crow.nl/imbor/id/domeinwaarden/780ab0c3-1ca3-4acd-8bf8-a18b8d07e86e",
+                "https://data.crow.nl/imbor/id/domeinwaarden/0806ffaa-e829-42b9-aebf-5509a31bf99e",
+                "https://data.crow.nl/imbor/id/domeinwaarden/8b6fea63-b008-438e-8768-0dfa719f5469",
+                "https://data.crow.nl/imbor/id/domeinwaarden/548194b4-dde7-45b6-a5b8-2d6eb6ecb2b0",
+                "https://data.crow.nl/imbor/id/domeinwaarden/956124a7-fd03-4c9a-8ea4-df9e6fbf7538",
+                "https://data.crow.nl/imbor/id/domeinwaarden/adee9fea-7b09-4981-aa5f-d9f636d35ebe",
+                "https://data.crow.nl/imbor/id/domeinwaarden/7569fd23-4c33-43c1-9b28-21d683f40b58",
+                "https://data.crow.nl/imbor/id/domeinwaarden/156eb2bf-81fc-4b06-bb0e-790b7ee09cf9"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Niet bepaald",
+                "Niet (volledig) te beoordelen",
+                "Armatuur in boom",
+                "Autochtoon plantmateriaal",
+                "Boom (vaste) rust en/of verblijfplaats",
+                "Boom op dak",
+                "Cultuurhistorisch waardevol",
+                "Dendrologisch waardevol",
+                "Ecologisch beheerde boom",
+                "Ecologisch waardevol",
+                "Fauna-voorziening in boom",
+                "Herdenkingsboom",
+                "Jaarrond beschermd nest",
+                "Klimboom",
+                "Lijst waardevolle bomen",
+                "Meerstammige boom",
+                "Monumentale boom (Bomenstichting)",
+                "Verblijfplaats vleermuizen",
+                "Verplant",
+                "Veterane boom",
+                "Vliegroute vleermuizen"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

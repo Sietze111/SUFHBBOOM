@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Class schema for Onderhoud",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "82a2cb7c-6ae2-4cf3-8199-e355d9bbb7b2"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/82a2cb7c-6ae2-4cf3-8199-e355d9bbb7b2"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "attributes": {
+            "type": "object",
+            "properties": {
+              "identificatie": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "7a70040f-37bf-4eb6-9011-ccda7b22d779"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.crow.nl/imbor/term/7a70040f-37bf-4eb6-9011-ccda7b22d779"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "specifiekOnderhoud": {
+                "$ref": "./domainvalues/specifiekOnderhoud.schema.json"
+              }
+            },
+            "required": [
+              "identificatie",
+              "specifiekOnderhoud"
+            ]
+          }
+        },
+        "required": [
+          "attributes"
+        ]
+      }
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "items"
+  ],
+  "additionalProperties": false
+}

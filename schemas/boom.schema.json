@@ -1,0 +1,227 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Boom Feature Schema (SUF Handboek Bomen 2026)",
+  "description": "Validates a single GeoJSON Feature representing a Boom (tree) in the SUF format.",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "83a942f7-5291-42f0-afb1-9a57d0fb2f15"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.crow.nl/imbor/def/83a942f7-5291-42f0-afb1-9a57d0fb2f15"
+    },
+    "Description": {
+      "type": "string",
+      "const": "Boom"
+    },
+    "type": {
+      "type": "string",
+      "const": "Feature"
+    },
+    "geometry": {
+      "$ref": "./geometry.schema.json"
+    },
+    "properties": {
+      "type": "object",
+      "properties": {
+        "identificatie": {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "const": "7a70040f-37bf-4eb6-9011-ccda7b22d779"
+            },
+            "UriMetadata": {
+              "type": "string",
+              "const": "https://data.crow.nl/imbor/term/7a70040f-37bf-4eb6-9011-ccda7b22d779"
+            },
+            "Value": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "UriMetadata",
+            "Value"
+          ],
+          "additionalProperties": false
+        },
+        "tijdstipRegistratie": {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "const": "3b733d09-a71e-4359-bf68-9d9e75e3df34"
+            },
+            "UriMetadata": {
+              "type": "string",
+              "const": "https://data.crow.nl/imbor/term/3b733d09-a71e-4359-bf68-9d9e75e3df34"
+            },
+            "Value": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "UriMetadata",
+            "Value"
+          ],
+          "additionalProperties": false
+        },
+        "eindRegistratie": {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "const": "1a6f0b22-a4e9-457e-b2ff-b8a07f0f2781"
+            },
+            "UriMetadata": {
+              "type": "string",
+              "const": "https://data.crow.nl/imbor/term/1a6f0b22-a4e9-457e-b2ff-b8a07f0f2781"
+            },
+            "Value": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "UriMetadata",
+            "Value"
+          ],
+          "additionalProperties": false
+        },
+        "nummer": {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "const": "a6424f8a-080e-4f85-a160-6fa4f0848ed8"
+            },
+            "UriMetadata": {
+              "type": "string",
+              "const": "https://data.crow.nl/imbor/def/a6424f8a-080e-4f85-a160-6fa4f0848ed8"
+            },
+            "Value": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "UriMetadata",
+            "Value"
+          ],
+          "additionalProperties": false
+        },
+        "geometrie": {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "const": "888e13ae-214e-471e-839b-79d77d69d46e"
+            },
+            "UriMetadata": {
+              "type": "string",
+              "const": "https://data.crow.nl/imbor/def/888e13ae-214e-471e-839b-79d77d69d46e"
+            },
+            "Value": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "UriMetadata",
+            "Value"
+          ],
+          "additionalProperties": false
+        },
+        "aanlegjaar": {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "const": "534f07b8-9243-4848-a3d0-6ebeb321784c"
+            },
+            "UriMetadata": {
+              "type": "string",
+              "const": "https://data.crow.nl/imbor/def/534f07b8-9243-4848-a3d0-6ebeb321784c"
+            },
+            "Value": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "UriMetadata",
+            "Value"
+          ],
+          "additionalProperties": false
+        },
+        "soortnaam": {
+          "$ref": "./domainvalues/soortnaam.schema.json"
+        },
+        "boomtype": {
+          "$ref": "./domainvalues/boomtype.schema.json"
+        },
+        "boombeleidsstatus": {
+          "$ref": "./domainvalues/boombeleidsstatus.schema.json"
+        },
+        "beheertype": {
+          "$ref": "./domainvalues/beheertype.schema.json"
+        },
+        "vereisteVrijeDoorgang": {
+          "$ref": "./domainvalues/vereisteVrijeDoorgang.schema.json"
+        },
+        "beoogdeOpkroonhoogte": {
+          "$ref": "./domainvalues/beoogdeOpkroonhoogte.schema.json"
+        },
+        "omgevingsrisicoklasseVeiligheid": {
+          "$ref": "./domainvalues/omgevingsrisicoklasseVeiligheid.schema.json"
+        },
+        "controlefrequentieVeiligheid": {
+          "$ref": "./domainvalues/controlefrequentieVeiligheid.schema.json"
+        },
+        "Boomkenmerk": {
+          "$ref": "./boomkenmerk.schema.json"
+        },
+        "Inspectie": {
+          "$ref": "./inspectie.schema.json"
+        },
+        "Uitvoeringsmaatregel": {
+          "$ref": "./uitvoeringsmaatregel.schema.json"
+        }
+      },
+      "required": [
+        "identificatie",
+        "geometrie"
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Description",
+    "type",
+    "geometry",
+    "properties"
+  ]
+}

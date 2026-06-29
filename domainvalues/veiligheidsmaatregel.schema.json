@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for veiligheidsmaatregel",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "e8dc4c12-fc8f-4190-b227-9262b8d9a8aa"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/e8dc4c12-fc8f-4190-b227-9262b8d9a8aa"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "d249db13-839e-4c44-9bee-7832361b90de",
+                "d12e9d32-74d0-42b5-aed2-a9f03a05f61c",
+                "1486d0b9-4c64-484a-8881-5c45868d3fc7",
+                "7f7be15f-0659-4bc8-9492-2023b829f345",
+                "67a56488-af49-45cb-b4c6-e688b3704a6a",
+                "57a4a080-6af4-404d-9551-168e166f16f2",
+                "25633013-5327-4ef4-a1ce-f0b6a4c3f0a2",
+                "354b0f8f-8cab-4fd7-aeb0-88fb86fc9113",
+                "19b36f3b-6d1c-4450-b5cb-533a627a7a39",
+                "454dbf1d-afad-48dd-9c9a-05ab7724c0a9",
+                "369a3eb1-aca7-4c23-a552-2800cf21c175",
+                "33d66fa0-262a-482d-8583-c672ccd6ba04",
+                "725faa87-e01c-40f6-bc83-429919dd1983",
+                "21ae26a5-1ca0-41c2-a015-22e1d1de5b88"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d249db13-839e-4c44-9bee-7832361b90de",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d12e9d32-74d0-42b5-aed2-a9f03a05f61c",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/1486d0b9-4c64-484a-8881-5c45868d3fc7",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/7f7be15f-0659-4bc8-9492-2023b829f345",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/67a56488-af49-45cb-b4c6-e688b3704a6a",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/57a4a080-6af4-404d-9551-168e166f16f2",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/25633013-5327-4ef4-a1ce-f0b6a4c3f0a2",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/354b0f8f-8cab-4fd7-aeb0-88fb86fc9113",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/19b36f3b-6d1c-4450-b5cb-533a627a7a39",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/454dbf1d-afad-48dd-9c9a-05ab7724c0a9",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/369a3eb1-aca7-4c23-a552-2800cf21c175",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/33d66fa0-262a-482d-8583-c672ccd6ba04",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/725faa87-e01c-40f6-bc83-429919dd1983",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/21ae26a5-1ca0-41c2-a015-22e1d1de5b88"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Niet bepaald",
+                "Niet (volledig) te beoordelen",
+                "Niet van toepassing",
+                "Vellen/kappen",
+                "Tak(ken) innemen",
+                "Tak(ken) verwijderen",
+                "Doorgang vrijmaken",
+                "Kroonreductie",
+                "Grof dood hout verwijderen",
+                "Verankering aanbrengen",
+                "Verankering controleren",
+                "Nader onderzoek (gebrek)",
+                "Nader onderzoek (vrije doorgang)",
+                "Hercontrole BVC",
+                "Verhoogde BVC"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

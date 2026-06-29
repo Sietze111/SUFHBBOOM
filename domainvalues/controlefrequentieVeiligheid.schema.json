@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for controlefrequentieVeiligheid",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "94e1a3da-c09d-4066-bcb1-bef670272d16"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/94e1a3da-c09d-4066-bcb1-bef670272d16"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "d078893c-a36d-495e-b0b5-d41c0e1bf64a",
+                "a583ef3a-9b4c-44fe-afd4-6537b5c5e400",
+                "f520a072-01bf-4087-bc93-ed849ea48280",
+                "a846860c-af4f-41e6-8013-87a58b383e9b",
+                "16db3c1a-50f3-40b3-af18-b25c59cfdcba",
+                "399b57a8-ee8e-4f3c-828c-51d172d314c7",
+                "55d643cd-2005-4d1e-935b-e07934d74ca3"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d078893c-a36d-495e-b0b5-d41c0e1bf64a",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/a583ef3a-9b4c-44fe-afd4-6537b5c5e400",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/f520a072-01bf-4087-bc93-ed849ea48280",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/a846860c-af4f-41e6-8013-87a58b383e9b",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/16db3c1a-50f3-40b3-af18-b25c59cfdcba",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/399b57a8-ee8e-4f3c-828c-51d172d314c7",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/55d643cd-2005-4d1e-935b-e07934d74ca3"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "1 x per 3 jaar",
+                "1 x per 4 jaar",
+                "1 x per 5 jaar",
+                "1 x per jaar",
+                "Niet (volledig) te beoordelen",
+                "Niet bepaald",
+                "Niet van toepassing"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}
