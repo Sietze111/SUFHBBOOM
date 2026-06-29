@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for snoeiwijze",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "c8af73fa-58cc-4e55-ab51-6b3db5360639"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/c8af73fa-58cc-4e55-ab51-6b3db5360639"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "d249db13-839e-4c44-9bee-7832361b90de",
+                "d12e9d32-74d0-42b5-aed2-a9f03a05f61c",
+                "b89ae20b-91b9-488e-a855-20c414d744fa",
+                "c728e52b-2946-43cc-ac59-e9b009c9caf5",
+                "69b2d430-9e30-4db8-9c4d-3d17797a225d",
+                "3a8b6650-479d-4309-a3e2-98c4ded3ef55",
+                "8de3fefa-4447-4169-960e-7905a1762ec0",
+                "42ebb849-6a40-4dcb-8231-283824f816de",
+                "aee01085-1705-46dc-acc6-2d71978f3ef8",
+                "64c92d45-b605-4f7f-a845-4107afe12406",
+                "58a34672-0435-4c44-8f3f-ddca57b50ee4",
+                "bfa52ed2-4ff6-4504-906f-4c8198e60e77",
+                "53da4a3f-1307-475a-874a-c8486c1ff85c",
+                "15151c57-bd2f-4136-9361-5af947d84208",
+                "73f2eae3-0b29-4e3a-b8c1-0eebd30fba50",
+                "c8582d22-7a7a-4cc2-b779-14e9f0d5767a",
+                "f745c743-5422-4e28-964f-1cd48fe9cc62",
+                "e617ac86-6a55-4f02-a37b-37adc5b1933b",
+                "6500c965-c85d-4482-9479-deae90803883"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d249db13-839e-4c44-9bee-7832361b90de",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d12e9d32-74d0-42b5-aed2-a9f03a05f61c",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/b89ae20b-91b9-488e-a855-20c414d744fa",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/c728e52b-2946-43cc-ac59-e9b009c9caf5",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/69b2d430-9e30-4db8-9c4d-3d17797a225d",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/3a8b6650-479d-4309-a3e2-98c4ded3ef55",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/8de3fefa-4447-4169-960e-7905a1762ec0",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/42ebb849-6a40-4dcb-8231-283824f816de",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/aee01085-1705-46dc-acc6-2d71978f3ef8",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/64c92d45-b605-4f7f-a845-4107afe12406",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/58a34672-0435-4c44-8f3f-ddca57b50ee4",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/bfa52ed2-4ff6-4504-906f-4c8198e60e77",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/53da4a3f-1307-475a-874a-c8486c1ff85c",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/15151c57-bd2f-4136-9361-5af947d84208",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/73f2eae3-0b29-4e3a-b8c1-0eebd30fba50",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/c8582d22-7a7a-4cc2-b779-14e9f0d5767a",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/f745c743-5422-4e28-964f-1cd48fe9cc62",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/e617ac86-6a55-4f02-a37b-37adc5b1933b",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6500c965-c85d-4482-9479-deae90803883"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Niet bepaald",
+                "Niet (volledig) te beoordelen",
+                "Niet van toepassing",
+                "Begeleidingssnoei",
+                "Onderhoudssnoei",
+                "Scheren",
+                "Terugzetten intensief",
+                "Terugzetten extensief",
+                "Knotten",
+                "Kandelaberen",
+                "Kandelaren",
+                "Toppen",
+                "Breuksnoei (fracture pruning)",
+                "Afzetten stoof",
+                "Innemen kroon",
+                "Uitlichten kroonrand",
+                "Fruitsnoei",
+                "Veteranensnoei",
+                "Terugzetten op stam",
+                "Ecologisch beheer (maatwerk)"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

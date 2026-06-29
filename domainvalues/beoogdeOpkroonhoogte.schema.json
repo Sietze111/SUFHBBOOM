@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for beoogdeOpkroonhoogte",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "8c3702fe-2b46-47ea-aa2d-8e6ca20ddf1b"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.crow.nl/imbor/def/8c3702fe-2b46-47ea-aa2d-8e6ca20ddf1b"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "af8b8f2f-516c-4aef-a8cc-0da99a1a6fe5",
+                "3205f6e6-5fb0-468e-933a-f00348bdb9d6",
+                "92627d7a-3f91-472f-9927-3fe9527989e3",
+                "d9cbb82e-e49b-4a5d-8188-37ba4f080f7f",
+                "67fbfe4c-5b75-4c84-8308-b07f828c58a6",
+                "abd37f2a-df10-4d70-98cf-94ec35e01029",
+                "7e9908e9-6682-4451-a8dd-5337083fb7d8",
+                "0413f255-1599-42bb-98b0-e52f295f0094",
+                "380191ec-86ec-4e24-b542-d1c8cfbc328c",
+                "5204bce0-d312-45bd-90da-6c1fd7a0f9fa",
+                "e553de3b-2248-4b00-b0ad-6d4dcf4b25b6",
+                "2a8b1847-a5f9-451c-b045-7a1c325fd98a",
+                "e2f166f7-88eb-4820-b399-f987f8bbb6a2",
+                "1b1d25e8-6c72-4a20-a0d0-a23c113bbb4c",
+                "792af62a-cf69-45b9-aad1-a74732e98930",
+                "e63f33f2-0c5a-4b81-9b37-d1d46d9dcdb1",
+                "63c160cf-83c0-4070-8ab7-b4c488be2df1"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.crow.nl/imbor/id/domeinwaarden/af8b8f2f-516c-4aef-a8cc-0da99a1a6fe5",
+                "https://data.crow.nl/imbor/id/domeinwaarden/3205f6e6-5fb0-468e-933a-f00348bdb9d6",
+                "https://data.crow.nl/imbor/id/domeinwaarden/92627d7a-3f91-472f-9927-3fe9527989e3",
+                "https://data.crow.nl/imbor/id/domeinwaarden/d9cbb82e-e49b-4a5d-8188-37ba4f080f7f",
+                "https://data.crow.nl/imbor/id/domeinwaarden/67fbfe4c-5b75-4c84-8308-b07f828c58a6",
+                "https://data.crow.nl/imbor/id/domeinwaarden/abd37f2a-df10-4d70-98cf-94ec35e01029",
+                "https://data.crow.nl/imbor/id/domeinwaarden/7e9908e9-6682-4451-a8dd-5337083fb7d8",
+                "https://data.crow.nl/imbor/id/domeinwaarden/0413f255-1599-42bb-98b0-e52f295f0094",
+                "https://data.crow.nl/imbor/id/domeinwaarden/380191ec-86ec-4e24-b542-d1c8cfbc328c",
+                "https://data.crow.nl/imbor/id/domeinwaarden/5204bce0-d312-45bd-90da-6c1fd7a0f9fa",
+                "https://data.crow.nl/imbor/id/domeinwaarden/e553de3b-2248-4b00-b0ad-6d4dcf4b25b6",
+                "https://data.crow.nl/imbor/id/domeinwaarden/2a8b1847-a5f9-451c-b045-7a1c325fd98a",
+                "https://data.crow.nl/imbor/id/domeinwaarden/e2f166f7-88eb-4820-b399-f987f8bbb6a2",
+                "https://data.crow.nl/imbor/id/domeinwaarden/1b1d25e8-6c72-4a20-a0d0-a23c113bbb4c",
+                "https://data.crow.nl/imbor/id/domeinwaarden/792af62a-cf69-45b9-aad1-a74732e98930",
+                "https://data.crow.nl/imbor/id/domeinwaarden/e63f33f2-0c5a-4b81-9b37-d1d46d9dcdb1",
+                "https://data.crow.nl/imbor/id/domeinwaarden/63c160cf-83c0-4070-8ab7-b4c488be2df1"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "2/0 m",
+                "2/2 m",
+                "4/0 m",
+                "4/2 m",
+                "4/4 m",
+                "6/0 m",
+                "6/2 m",
+                "6/4 m",
+                "6/6 m",
+                "8/0 m",
+                "8/2 m",
+                "8/4 m",
+                "8/6 m",
+                "8/8 m",
+                "Niet (volledig) te beoordelen",
+                "Niet bepaald",
+                "Niet van toepassing"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

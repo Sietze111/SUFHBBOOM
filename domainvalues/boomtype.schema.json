@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for boomtype",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "b5b0fa6e-9f0f-4bc0-b5cf-56bb576d39ab"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.crow.nl/imbor/def/b5b0fa6e-9f0f-4bc0-b5cf-56bb576d39ab"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "7a71f6c8-f2c7-4352-9103-1291a7e517b8",
+                "792af62a-cf69-45b9-aad1-a74732e98930",
+                "e63f33f2-0c5a-4b81-9b37-d1d46d9dcdb1",
+                "63c160cf-83c0-4070-8ab7-b4c488be2df1",
+                "1abfd566-b368-460a-b821-43ba54f66a8b",
+                "6a1d8273-f918-4c0a-8f94-d94918753418",
+                "a2eefda5-2c3b-4a92-976d-9b62a747ab9b",
+                "55e2e668-1ad4-4132-a5d2-ed1a932edf98",
+                "3f4e48cc-0b62-47e9-9a4b-e123e5f6e690",
+                "53448406-0b31-4799-8665-dacc3ea6ca92",
+                "a2dc6fe5-4f8e-4592-b2f5-8ea968d68aa6",
+                "6794637f-2958-4565-8576-661f19ab3131"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.crow.nl/imbor/id/domeinwaarden/7a71f6c8-f2c7-4352-9103-1291a7e517b8",
+                "https://data.crow.nl/imbor/id/domeinwaarden/792af62a-cf69-45b9-aad1-a74732e98930",
+                "https://data.crow.nl/imbor/id/domeinwaarden/e63f33f2-0c5a-4b81-9b37-d1d46d9dcdb1",
+                "https://data.crow.nl/imbor/id/domeinwaarden/63c160cf-83c0-4070-8ab7-b4c488be2df1",
+                "https://data.crow.nl/imbor/id/domeinwaarden/1abfd566-b368-460a-b821-43ba54f66a8b",
+                "https://data.crow.nl/imbor/id/domeinwaarden/6a1d8273-f918-4c0a-8f94-d94918753418",
+                "\thttps://data.crow.nl/imbor/id/domeinwaarden/a2eefda5-2c3b-4a92-976d-9b62a747ab9b",
+                "\thttps://data.crow.nl/imbor/id/domeinwaarden/55e2e668-1ad4-4132-a5d2-ed1a932edf98",
+                "\thttps://data.crow.nl/imbor/id/domeinwaarden/3f4e48cc-0b62-47e9-9a4b-e123e5f6e690",
+                "https://data.crow.nl/imbor/id/domeinwaarden/53448406-0b31-4799-8665-dacc3ea6ca92",
+                "https://data.crow.nl/imbor/id/domeinwaarden/a2dc6fe5-4f8e-4592-b2f5-8ea968d68aa6",
+                "https://data.crow.nl/imbor/id/domeinwaarden/6794637f-2958-4565-8576-661f19ab3131"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Afgezette stoof",
+                "Niet (volledig) te beoordelen",
+                "Niet bepaald",
+                "Niet van toepassing",
+                "Niet vrij uitgroeiend",
+                "Stamdeel",
+                "Vormboom gekandelaard",
+                "Vormboom gekandelaberd",
+                "Vormboom geknot",
+                "Vormboom geleid",
+                "Vormboom geschoren",
+                "Vrij uitgroeiend"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

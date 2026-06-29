@@ -1,0 +1,403 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Class schema for Uitvoeringsmaatregel",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "8d38b8c2-ec3c-4df4-888e-638ceee5911b"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/8d38b8c2-ec3c-4df4-888e-638ceee5911b"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "attributes": {
+            "type": "object",
+            "properties": {
+              "identificatie": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "7a70040f-37bf-4eb6-9011-ccda7b22d779"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.crow.nl/imbor/term/7a70040f-37bf-4eb6-9011-ccda7b22d779"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "inspectieId": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "ca490d94-edaf-417b-9133-522ef10a87ce"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/ca490d94-edaf-417b-9133-522ef10a87ce"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "projectnaamUitvoering": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "a042b76c-a4e6-4b85-8a86-397186371a7d"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/a042b76c-a4e6-4b85-8a86-397186371a7d"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "uitvoeringsmaatregel": {
+                "$ref": "./domainvalues/uitvoeringsmaatregel.schema.json"
+              },
+              "urgentie": {
+                "$ref": "./domainvalues/urgentie.schema.json"
+              },
+              "besluitDoor": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "8ac27a95-dee7-44ab-ab8f-42cc28304037"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/8ac27a95-dee7-44ab-ab8f-42cc28304037"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "datumBesluit": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "9931c1ce-cfc8-487d-be25-2c22926b4375"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/9931c1ce-cfc8-487d-be25-2c22926b4375"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "toelichtingBesluit": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "df9e519d-62f1-42a4-8cc0-10a9973bf5e8"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/df9e519d-62f1-42a4-8cc0-10a9973bf5e8"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "statusUitvoering": {
+                "$ref": "./domainvalues/statusUitvoering.schema.json"
+              },
+              "datumUitvoering": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "933e4e43-8085-4d73-9b68-8eeae09c312a"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/933e4e43-8085-4d73-9b68-8eeae09c312a"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "uitvoerder": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "4239f6ec-ab42-425c-bcaa-b2a59bce2c59"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/4239f6ec-ab42-425c-bcaa-b2a59bce2c59"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "organisatieUitvoerder": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "72cf36a7-b2cf-46c6-9f0a-c9e8cbd8335b"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/72cf36a7-b2cf-46c6-9f0a-c9e8cbd8335b"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "notitieUitvoering": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "4022404f-2129-4d39-a235-71d74bca3a9c"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/4022404f-2129-4d39-a235-71d74bca3a9c"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "afwijking": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "603b9af9-3ff2-4478-b3ac-165a7edea08e"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/603b9af9-3ff2-4478-b3ac-165a7edea08e"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "statusToezicht": {
+                "$ref": "./domainvalues/statusToezicht.schema.json"
+              },
+              "toezichthouder": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "80a51f2b-5479-4e23-ae78-5fc76d4be0fd"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/80a51f2b-5479-4e23-ae78-5fc76d4be0fd"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "datumToezicht": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "b6200010-ea9f-4b88-a465-fe8f6f312f12"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/b6200010-ea9f-4b88-a465-fe8f6f312f12"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              },
+              "notitieToezicht": {
+                "type": "object",
+                "properties": {
+                  "GUID": {
+                    "type": "string",
+                    "const": "efeb525a-19a9-4469-a140-25b2f798661b"
+                  },
+                  "UriMetadata": {
+                    "type": "string",
+                    "const": "https://data.norminstituutbomen.nl/hb/def/efeb525a-19a9-4469-a140-25b2f798661b"
+                  },
+                  "Value": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "GUID",
+                  "UriMetadata",
+                  "Value"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "identificatie",
+              "uitvoeringsmaatregel"
+            ]
+          }
+        },
+        "required": [
+          "attributes"
+        ]
+      }
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "items"
+  ],
+  "additionalProperties": false
+}

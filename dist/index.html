@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUF Validator</title>
+    <script type="module" crossorigin src="./assets/index-a4ZIEVnR.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CQbwQSYq.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <p class="eyebrow">SUF Handboek Bomen 2026</p>
+        <h1>Bestandsvalidatie zonder server</h1>
+        <p class="hero-copy">
+          Sleep je exportbestand in het vlak hieronder of kies een JSON-bestand.
+          Validatie draait volledig in je browser met dezelfde schema-logica.
+        </p>
+      </section>
+
+      <section class="drop-panel" id="drop-panel" aria-label="Bestand uploaden">
+        <input
+          id="file-input"
+          class="file-input"
+          type="file"
+          accept="application/json,.json"
+        />
+        <p class="drop-title">Sleep JSON hierheen</p>
+        <p class="drop-subtitle">of klik om een bestand te kiezen</p>
+        <p class="drop-hint">
+          Aanbevolen: SUF export uit voorbeeldbestand of eigen export
+        </p>
+      </section>
+
+      <section class="status" id="status" aria-live="polite">
+        Nog geen bestand gevalideerd.
+      </section>
+
+      <section class="result-card" id="result-card" hidden>
+        <header class="result-header">
+          <h2 id="result-title">Resultaat</h2>
+          <p id="result-file" class="result-file"></p>
+        </header>
+
+        <div id="summary-block"></div>
+
+        <details id="raw-details" class="raw-details" hidden>
+          <summary>Toon ruwe validatiefouten (AJV)</summary>
+          <pre id="raw-errors" class="raw-errors"></pre>
+        </details>
+      </section>
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for boombeeld",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "315bbd90-179c-4437-ae7b-3e09280a344e"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/315bbd90-179c-4437-ae7b-3e09280a344e"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "d249db13-839e-4c44-9bee-7832361b90de",
+                "d12e9d32-74d0-42b5-aed2-a9f03a05f61c",
+                "c1f68266-c2a9-486f-96f0-fd908c73ff86",
+                "fb8d7770-426f-4ad2-a8fa-78f84983faca",
+                "4ed3b388-899e-4687-b77f-18b2910d2e0f",
+                "986b7c45-770d-45d8-a677-28cd5ae2eb92"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d249db13-839e-4c44-9bee-7832361b90de",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d12e9d32-74d0-42b5-aed2-a9f03a05f61c",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/c1f68266-c2a9-486f-96f0-fd908c73ff86",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/fb8d7770-426f-4ad2-a8fa-78f84983faca",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/4ed3b388-899e-4687-b77f-18b2910d2e0f",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/986b7c45-770d-45d8-a677-28cd5ae2eb92"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Niet bepaald",
+                "Niet (volledig) te beoordelen",
+                "Niet van toepassing",
+                "Aanvaard",
+                "Regulier",
+                "Achterstallig",
+                "Verwaarloosd"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

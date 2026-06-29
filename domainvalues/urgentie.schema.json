@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for urgentie",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "ab82a45f-9da8-4720-a6f9-553258c2fe9c"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/ab82a45f-9da8-4720-a6f9-553258c2fe9c"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "d249db13-839e-4c44-9bee-7832361b90de",
+                "d12e9d32-74d0-42b5-aed2-a9f03a05f61c",
+                "d141cb30-2c85-4e30-9d1f-02ae56aac136",
+                "7c98d890-e3bf-481c-add0-fdf8384857b1",
+                "e8142484-772f-4fd6-a437-4478d87df041",
+                "0e850491-588c-45ef-a8e5-eca0c4fbf9eb"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d249db13-839e-4c44-9bee-7832361b90de",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d12e9d32-74d0-42b5-aed2-a9f03a05f61c",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d141cb30-2c85-4e30-9d1f-02ae56aac136",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/7c98d890-e3bf-481c-add0-fdf8384857b1",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/e8142484-772f-4fd6-a437-4478d87df041",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/0e850491-588c-45ef-a8e5-eca0c4fbf9eb"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Niet bepaald",
+                "Niet (volledig) te beoordelen",
+                "Niet van toepassing",
+                "Acuut",
+                "< 1 mnd.",
+                "< 6 mnd.",
+                "< 1 jaar"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

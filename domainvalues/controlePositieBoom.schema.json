@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for controlePositieBoom",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "98934f65-4466-4eea-98f8-c99ca00186d4"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/98934f65-4466-4eea-98f8-c99ca00186d4"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "9e3b5398-0ddd-43b2-ad10-6da0c4ea2506",
+                "36deee5c-d6cc-4e72-b795-98d2183cde11",
+                "3c17cdb9-a1f0-41e6-8580-fbb2fcbc9d0b",
+                "ad586607-a444-415c-82fa-18a43981ae3d",
+                "b0dd5fc9-715e-43ae-84e9-7f65314c01c0",
+                "27c186c2-c861-4378-a595-cb4769f6b2db",
+                "b1e5232f-e4dc-4d88-b427-d292f4642e7c",
+                "27d19f21-1dc4-4a3d-bcf5-c4b109af3e0d"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/9e3b5398-0ddd-43b2-ad10-6da0c4ea2506",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/36deee5c-d6cc-4e72-b795-98d2183cde11",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/3c17cdb9-a1f0-41e6-8580-fbb2fcbc9d0b",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/ad586607-a444-415c-82fa-18a43981ae3d",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/b0dd5fc9-715e-43ae-84e9-7f65314c01c0",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/27c186c2-c861-4378-a595-cb4769f6b2db",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/b1e5232f-e4dc-4d88-b427-d292f4642e7c",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/27d19f21-1dc4-4a3d-bcf5-c4b109af3e0d"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Boom niet aanwezig",
+                "Boompunt niet (volledigheid) te beoordelen",
+                "Boompunt toegevoegd",
+                "Juist",
+                "Niet bepaald",
+                "Onjuist, gecorrigeerd",
+                "Onjuist, niet gecorrigeerd",
+                "Stobbe"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

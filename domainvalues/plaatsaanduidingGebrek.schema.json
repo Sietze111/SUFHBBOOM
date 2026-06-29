@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for plaatsaanduidingGebrek",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "0888db5f-ceed-4075-9943-83ff3eef1547"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/0888db5f-ceed-4075-9943-83ff3eef1547"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "d249db13-839e-4c44-9bee-7832361b90de",
+                "d12e9d32-74d0-42b5-aed2-a9f03a05f61c",
+                "a96d05e1-5299-4312-8418-8623ad679490",
+                "788bbcd0-eedf-41bf-93a2-66e7a9e6e8d9",
+                "9a7a5b27-f8bb-40db-a11e-29397c3f9b92",
+                "999b4f95-4b97-4cef-a128-21dede38de96",
+                "5e984737-cc9c-454b-b376-d405ffda6790"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d249db13-839e-4c44-9bee-7832361b90de",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d12e9d32-74d0-42b5-aed2-a9f03a05f61c",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/a96d05e1-5299-4312-8418-8623ad679490",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/788bbcd0-eedf-41bf-93a2-66e7a9e6e8d9",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/9a7a5b27-f8bb-40db-a11e-29397c3f9b92",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/999b4f95-4b97-4cef-a128-21dede38de96",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/5e984737-cc9c-454b-b376-d405ffda6790"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Niet bepaald",
+                "Niet (volledig) te beoordelen",
+                "Niet van toepassing",
+                "Kroon",
+                "Stam",
+                "Stamvoet",
+                "Maaiveld",
+                "Algemeen"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,24 @@
+{
+  "name": "suf-validator",
+  "version": "1.0.0",
+  "description": "SUF Handboek Bomen 2026 – JSON schema validator",
+  "main": "validate.js",
+  "scripts": {
+    "validate": "node validate.js",
+    "validate:file": "node validate.js",
+    "frontend:dev": "vite",
+    "frontend:build": "vite build",
+    "frontend:preview": "vite preview",
+    "build": "npm run frontend:build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "^7.0.0"
+  }
+}

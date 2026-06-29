@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for specifiekOnderhoud",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "8f3cf807-87ce-4db5-bcb0-3c58daa540d2"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/8f3cf807-87ce-4db5-bcb0-3c58daa540d2"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "d249db13-839e-4c44-9bee-7832361b90de",
+                "d12e9d32-74d0-42b5-aed2-a9f03a05f61c",
+                "215fd1ab-c37a-47d7-82ce-6a670d5eb492",
+                "9cecb24a-3c32-4909-8c06-57c17977bcf4",
+                "d1b9611f-e9b3-41de-a992-5e6e0c5d032f",
+                "e9fe1c9d-a289-4175-b851-bb175b8f512d",
+                "a66ec6f0-008b-4b64-911e-58b1c3bd2634",
+                "ac1c1072-04ce-4e04-844e-3362328df150",
+                "793cb89f-8190-41df-8e5c-1ccda05c922e",
+                "06daf311-6199-4cd1-8f5c-45c43a39931e",
+                "16212e24-c7b8-48da-9f72-43e78391420c",
+                "edc6508b-2766-4014-8418-77af842d9189",
+                "cf4f4faa-52d9-4f56-9a6a-2e53eb9fbb82",
+                "cb09026a-8543-4cbe-84d6-2722c84a9025"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d249db13-839e-4c44-9bee-7832361b90de",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d12e9d32-74d0-42b5-aed2-a9f03a05f61c",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/215fd1ab-c37a-47d7-82ce-6a670d5eb492",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/9cecb24a-3c32-4909-8c06-57c17977bcf4",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d1b9611f-e9b3-41de-a992-5e6e0c5d032f",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/e9fe1c9d-a289-4175-b851-bb175b8f512d",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/a66ec6f0-008b-4b64-911e-58b1c3bd2634",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/ac1c1072-04ce-4e04-844e-3362328df150",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/793cb89f-8190-41df-8e5c-1ccda05c922e",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/06daf311-6199-4cd1-8f5c-45c43a39931e",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/16212e24-c7b8-48da-9f72-43e78391420c",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/edc6508b-2766-4014-8418-77af842d9189",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/cf4f4faa-52d9-4f56-9a6a-2e53eb9fbb82",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/cb09026a-8543-4cbe-84d6-2722c84a9025"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Niet bepaald",
+                "Niet (volledig) te beoordelen",
+                "Niet van toepassing",
+                "Attentie: rust-/ verblijfplaats (Omgevingswet)",
+                "Advies: matigen snoeiingreep",
+                "Advies: separate snoei waterlot",
+                "Advies: verwijderen klimplant",
+                "Advies: snoeien onderbeplanting",
+                "Advies: vellen boom (dunning)",
+                "Advies: kappen boom (beheer)",
+                "Advies: her- of bijstellen bodemverankering",
+                "Advies: verwijderen boompalen",
+                "Advies: vergroten (open) boomspiegel",
+                "Advies: verwijderen of aanpassen boomrooster ",
+                "Advies: Rooien/bewerken stobbe"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

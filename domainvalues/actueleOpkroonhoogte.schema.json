@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for actueleOpkroonhoogte",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "0ced6d98-67a9-42c1-b551-9927c18872fe"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/0ced6d98-67a9-42c1-b551-9927c18872fe"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "d249db13-839e-4c44-9bee-7832361b90de",
+                "d12e9d32-74d0-42b5-aed2-a9f03a05f61c",
+                "247c3833-1cb7-4f28-beff-02d850152933",
+                "2ba2c9e0-e36c-47ce-9f5b-7468f5b96e67",
+                "b1128a4d-a7e4-4590-96ff-4acb4149e879",
+                "da5d0378-2583-4f13-b4e5-78a7afc214cb",
+                "59a92080-a1f0-4ecc-af54-761001c173ed"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d249db13-839e-4c44-9bee-7832361b90de",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d12e9d32-74d0-42b5-aed2-a9f03a05f61c",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/247c3833-1cb7-4f28-beff-02d850152933",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/2ba2c9e0-e36c-47ce-9f5b-7468f5b96e67",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/b1128a4d-a7e4-4590-96ff-4acb4149e879",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/da5d0378-2583-4f13-b4e5-78a7afc214cb",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/59a92080-a1f0-4ecc-af54-761001c173ed"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Niet bepaald",
+                "Niet (volledig) te beoordelen",
+                "Niet van toepassing",
+                "Bereikt",
+                "Nog niet bereikt",
+                "Niet volledig bereikbaar",
+                "Onbereikbaar 1:1",
+                "Onbereikbaar (ongewenst)"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

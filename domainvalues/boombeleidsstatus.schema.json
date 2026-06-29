@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for boombeleidsstatus",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "5b736087-3105-435b-b76b-2e6bb2333152"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.crow.nl/imbor/def/5b736087-3105-435b-b76b-2e6bb2333152"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "e63f33f2-0c5a-4b81-9b37-d1d46d9dcdb1",
+                "792af62a-cf69-45b9-aad1-a74732e98930",
+                "02838951-6cf2-4f4a-b0bd-e80078cfcdf7",
+                "80a33841-9073-4191-af35-d9bf0d340afd",
+                "50dbcbb1-41ce-4d34-9e8c-4867b0adbcda",
+                "2e3a3a80-c221-4bb0-8560-fa6313592748"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.crow.nl/imbor/id/domeinwaarden/e63f33f2-0c5a-4b81-9b37-d1d46d9dcdb1",
+                "https://data.crow.nl/imbor/id/domeinwaarden/792af62a-cf69-45b9-aad1-a74732e98930",
+                "https://data.crow.nl/imbor/id/domeinwaarden/02838951-6cf2-4f4a-b0bd-e80078cfcdf7",
+                "https://data.crow.nl/imbor/id/domeinwaarden/80a33841-9073-4191-af35-d9bf0d340afd",
+                "https://data.crow.nl/imbor/id/domeinwaarden/50dbcbb1-41ce-4d34-9e8c-4867b0adbcda",
+                "https://data.crow.nl/imbor/id/domeinwaarden/2e3a3a80-c221-4bb0-8560-fa6313592748"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Niet bepaald",
+                "Niet (volledig) te beoordelen",
+                "Beleidsklasse I",
+                "Beleidsklasse II",
+                "Beleidsklasse III",
+                "Beleidsklasse IV"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

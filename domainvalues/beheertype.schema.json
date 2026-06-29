@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for beheertype",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "03166552-f743-4606-837f-700ac9b27f3c"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/03166552-f743-4606-837f-700ac9b27f3c"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "23d90d4a-d4f1-4164-99a9-040ddd69cacf",
+                "9997c2c0-936d-43e1-a24f-c48937998413",
+                "b429276a-8b6c-4899-a33c-48a7de4d1af0",
+                "bf59ef51-a2ae-4793-9894-e5bf22a95df8",
+                "1a62e04f-94e4-422b-bb78-202330cd0255",
+                "aeb6b8b5-6a4b-41b9-80d8-236efd966be0",
+                "3ce5e8f9-77b4-45d4-81cb-f2a8556a18f6",
+                "b04b5c81-f222-4ecb-b1bf-01f4b5255943",
+                "4de7c4cc-4e9a-457c-921f-f402666ad1f1",
+                "fb2c4a3c-ec4f-427c-b64d-3c7726dc22a3",
+                "f21aa37a-82eb-43e9-b84d-a996934786f4",
+                "d611e90f-8923-4ca6-87fe-017105ff2e15",
+                "50e1cabe-b9e4-4437-9255-ab677239e9f6",
+                "b64d8454-da10-4b68-b8bd-d5c8c54d8a62",
+                "c346da1c-19bd-4047-93fa-802ab05bcb5d",
+                "956e8c58-2a5c-4411-b8a5-3f7545428e8c",
+                "ef880cf9-cf9c-444a-81d6-1ff7e159d133",
+                "8ce9842a-8ecd-4eba-91cd-8fa1be1ab9f3",
+                "c1c759c5-8ac9-465f-b548-4a400d8d8f57",
+                "a5789f65-4d2c-4f7f-ae65-ad87f3056e1a",
+                "c320e1f9-8937-41f6-a93a-75a8dd777189",
+                "2d98c847-d298-4653-96f9-b7e0e0f42c62",
+                "07a21506-8de8-423a-bf15-beefa3a96c4c"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/23d90d4a-d4f1-4164-99a9-040ddd69cacf",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/9997c2c0-936d-43e1-a24f-c48937998413",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/b429276a-8b6c-4899-a33c-48a7de4d1af0",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/bf59ef51-a2ae-4793-9894-e5bf22a95df8",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/1a62e04f-94e4-422b-bb78-202330cd0255",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/aeb6b8b5-6a4b-41b9-80d8-236efd966be0",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/3ce5e8f9-77b4-45d4-81cb-f2a8556a18f6",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/b04b5c81-f222-4ecb-b1bf-01f4b5255943",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/4de7c4cc-4e9a-457c-921f-f402666ad1f1",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/fb2c4a3c-ec4f-427c-b64d-3c7726dc22a3",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/f21aa37a-82eb-43e9-b84d-a996934786f4",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d611e90f-8923-4ca6-87fe-017105ff2e15",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/50e1cabe-b9e4-4437-9255-ab677239e9f6",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/b64d8454-da10-4b68-b8bd-d5c8c54d8a62",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/c346da1c-19bd-4047-93fa-802ab05bcb5d",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/956e8c58-2a5c-4411-b8a5-3f7545428e8c",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/ef880cf9-cf9c-444a-81d6-1ff7e159d133",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/8ce9842a-8ecd-4eba-91cd-8fa1be1ab9f3",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/c1c759c5-8ac9-465f-b548-4a400d8d8f57",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/a5789f65-4d2c-4f7f-ae65-ad87f3056e1a",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/c320e1f9-8937-41f6-a93a-75a8dd777189",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/2d98c847-d298-4653-96f9-b7e0e0f42c62",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/07a21506-8de8-423a-bf15-beefa3a96c4c"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Boom getopt",
+                "Boomkroon ingenomen",
+                "Breuksnoei (fracture pruning)",
+                "Ecologisch beheerd stamdeel",
+                "Ecologisch beheerde boom",
+                "Fruitsnoei (hoogstam)",
+                "Fruitsnoei (laagstam)",
+                "Geleide boom dak",
+                "Geleide boom scherm",
+                "Geschoren berceau",
+                "Geschoren blokvorm",
+                "Geschoren bolvorm",
+                "Geschoren kegelvorm",
+                "Geschoren piramidevorm",
+                "Geschoren zuilvorm",
+                "Knotboom",
+                "Knotboom (Franse knot)",
+                "Kroonrand uitgelicht",
+                "Niet (volledig) te beoordelen",
+                "Niet bepaald",
+                "Niet van toepassing",
+                "Opgaande boom",
+                "Vormboom teruggezet"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

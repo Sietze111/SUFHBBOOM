@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for boomhoogteklasseActueel",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "c8033fd0-7e19-4aa3-84c1-395929eddc41"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/c8033fd0-7e19-4aa3-84c1-395929eddc41"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "d249db13-839e-4c44-9bee-7832361b90de",
+                "ecd06204-144a-4be1-b15f-4186e87f0593",
+                "0840e594-2204-4b2b-b249-a5d2576dc24e",
+                "1cd71a08-f809-495d-91a4-9ad5c624a53e",
+                "659bf0cd-1b44-489f-9d57-28db4736fa49",
+                "444ce2a0-f8ca-4dac-b920-97af83f8a535"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6156b2a5-df7b-47cb-977f-8d411d45f5f5",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d249db13-839e-4c44-9bee-7832361b90de",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/ecd06204-144a-4be1-b15f-4186e87f0593",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/0840e594-2204-4b2b-b249-a5d2576dc24e",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/1cd71a08-f809-495d-91a4-9ad5c624a53e",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/659bf0cd-1b44-489f-9d57-28db4736fa49",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/444ce2a0-f8ca-4dac-b920-97af83f8a535"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Niet bepaald",
+                "Niet (volledig) te beoordelen",
+                "tot 6 m.",
+                "6 tot 12 m.",
+                "12 tot 18 m.",
+                "18 tot 24 m.",
+                "24 m. en hoger"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

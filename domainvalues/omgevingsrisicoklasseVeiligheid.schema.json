@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for omgevingsrisicoklasseVeiligheid",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "437806c5-6d08-4163-a837-4ad221fd0483"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.crow.nl/imbor/def/437806c5-6d08-4163-a837-4ad221fd0483"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "af12c9a2-d46f-4932-aed7-b2b6cbe57409",
+                "bfe150b4-2be5-4ef6-923a-f13698e84be2",
+                "21ca6df4-8ec9-43b3-a3d3-8fd44e225f36",
+                "792af62a-cf69-45b9-aad1-a74732e98930",
+                "e63f33f2-0c5a-4b81-9b37-d1d46d9dcdb1",
+                "5a11c587-0945-4bc7-a6ad-922a205fa43c"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.crow.nl/imbor/id/domeinwaarden/af12c9a2-d46f-4932-aed7-b2b6cbe57409",
+                "https://data.crow.nl/imbor/id/domeinwaarden/bfe150b4-2be5-4ef6-923a-f13698e84be2",
+                "https://data.crow.nl/imbor/id/domeinwaarden/21ca6df4-8ec9-43b3-a3d3-8fd44e225f36",
+                "https://data.crow.nl/imbor/id/domeinwaarden/792af62a-cf69-45b9-aad1-a74732e98930",
+                "https://data.crow.nl/imbor/id/domeinwaarden/e63f33f2-0c5a-4b81-9b37-d1d46d9dcdb1",
+                "https://data.crow.nl/imbor/id/domeinwaarden/5a11c587-0945-4bc7-a6ad-922a205fa43c"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Algemeen",
+                "Beperkt",
+                "Geen",
+                "Niet (volledig) te beoordelen",
+                "Niet bepaald",
+                "Verhoogd"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

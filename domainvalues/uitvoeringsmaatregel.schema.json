@@ -1,0 +1,171 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Domain value schema for uitvoeringsmaatregel",
+  "type": "object",
+  "properties": {
+    "GUID": {
+      "type": "string",
+      "const": "41ac5ffa-665a-40e4-8c54-fea34f1ffe71"
+    },
+    "UriMetadata": {
+      "type": "string",
+      "const": "https://data.norminstituutbomen.nl/hb/def/41ac5ffa-665a-40e4-8c54-fea34f1ffe71"
+    },
+    "Value": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "GUID": {
+              "type": "string",
+              "enum": [
+                "296dde8a-fa76-4acf-9869-58e726b13731",
+                "b099cb3e-681a-488a-b44e-4b03475db3dc",
+                "4aa91e97-ad3e-4891-a843-8316de8f0d2b",
+                "6a37f4c7-017a-4d9e-ab37-911eb14d7eaa",
+                "40863721-83fd-46e2-9be2-3952f5b469d4",
+                "d80d1157-8f94-4d08-b8cb-e9e72dc5bf5c",
+                "7201e4c7-a9a4-4fbf-bf38-db1eb77ef22b",
+                "78aabd3f-a4bd-4556-b72f-4a7f9761b5ad",
+                "c8b26d3e-a98a-4642-8994-99c4ff4b4414",
+                "6cc2ecee-2bf1-45da-9531-cc4c06712c04",
+                "27d703bd-4016-4c2c-a5c3-787c734c5673",
+                "a71ade7e-cce1-4d69-9587-9c8673aa2801",
+                "13858a03-9afa-41a9-9541-d2ff130cdc8b",
+                "b5cd7952-b8a1-4838-a5d6-efae96bae917",
+                "f84ff0a0-5bc1-480b-84b7-4fe2cdc59f71",
+                "24cfd9a4-a898-45e0-84ad-4e4cb7fce8d0",
+                "c5aff1d4-30d2-4f51-9c7d-9508e969ed3f",
+                "685183c4-9108-4da5-9174-cd891b77bed7",
+                "8ebe0c63-17ba-4d08-a92f-639a3bcc1b6f",
+                "28dc8a47-71ba-4ce0-8c8d-b87a1cbbf3c4",
+                "f9f76743-3bfd-47ce-9684-999565000c92",
+                "24cefad8-7447-421e-a5b4-a9074d7479d4",
+                "ea28e664-aac1-46ae-a88e-874c5ff3dd76",
+                "dd141276-9542-4b0c-a71b-38b0eb29d280",
+                "843eebd9-eed3-404c-b339-35b7bccd8715",
+                "905f9d63-a8dc-4d4c-a373-d0e92c73faf4",
+                "08f283e6-9ade-4235-b241-56e33d7213d5",
+                "0e0f4a53-0e9c-4b5e-a174-a279a0bae335",
+                "72027bc6-27ba-4e46-8723-aef9c5b5c71f",
+                "e17747f4-4b20-46e5-9268-b8a83fdf5001",
+                "1e4f7b78-e532-4730-a182-bdcf3cb0d0b7",
+                "69db7aca-f147-4334-85cc-de73514db3a3",
+                "c828a0d2-66f0-4592-b40b-4e83d37c0e48",
+                "9394d6b9-8330-459c-a73d-159ed52fde17",
+                "f0942df3-2a02-492f-89c1-af36aefd712e",
+                "48100221-adb3-42b5-b6e1-30cf5feb35a8",
+                "7ffc5bf4-4157-4ad3-8d23-2d44fa2f9ae2",
+                "bbbb5b5d-1340-49ea-a8d4-a2dba93312ef",
+                "82b915cc-e1e3-4b8a-920b-b3586099cf79"
+              ]
+            },
+            "Uri": {
+              "type": "string",
+              "enum": [
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/296dde8a-fa76-4acf-9869-58e726b13731",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/b099cb3e-681a-488a-b44e-4b03475db3dc",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/4aa91e97-ad3e-4891-a843-8316de8f0d2b",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6a37f4c7-017a-4d9e-ab37-911eb14d7eaa",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/40863721-83fd-46e2-9be2-3952f5b469d4",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/d80d1157-8f94-4d08-b8cb-e9e72dc5bf5c",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/7201e4c7-a9a4-4fbf-bf38-db1eb77ef22b",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/78aabd3f-a4bd-4556-b72f-4a7f9761b5ad",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/c8b26d3e-a98a-4642-8994-99c4ff4b4414",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/6cc2ecee-2bf1-45da-9531-cc4c06712c04",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/27d703bd-4016-4c2c-a5c3-787c734c5673",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/a71ade7e-cce1-4d69-9587-9c8673aa2801",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/13858a03-9afa-41a9-9541-d2ff130cdc8b",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/b5cd7952-b8a1-4838-a5d6-efae96bae917",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/f84ff0a0-5bc1-480b-84b7-4fe2cdc59f71",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/24cfd9a4-a898-45e0-84ad-4e4cb7fce8d0",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/c5aff1d4-30d2-4f51-9c7d-9508e969ed3f",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/685183c4-9108-4da5-9174-cd891b77bed7",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/8ebe0c63-17ba-4d08-a92f-639a3bcc1b6f",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/28dc8a47-71ba-4ce0-8c8d-b87a1cbbf3c4",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/f9f76743-3bfd-47ce-9684-999565000c92",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/24cefad8-7447-421e-a5b4-a9074d7479d4",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/ea28e664-aac1-46ae-a88e-874c5ff3dd76",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/dd141276-9542-4b0c-a71b-38b0eb29d280",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/843eebd9-eed3-404c-b339-35b7bccd8715",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/905f9d63-a8dc-4d4c-a373-d0e92c73faf4",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/08f283e6-9ade-4235-b241-56e33d7213d5",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/0e0f4a53-0e9c-4b5e-a174-a279a0bae335",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/72027bc6-27ba-4e46-8723-aef9c5b5c71f",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/e17747f4-4b20-46e5-9268-b8a83fdf5001",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/1e4f7b78-e532-4730-a182-bdcf3cb0d0b7",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/69db7aca-f147-4334-85cc-de73514db3a3",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/c828a0d2-66f0-4592-b40b-4e83d37c0e48",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/9394d6b9-8330-459c-a73d-159ed52fde17",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/f0942df3-2a02-492f-89c1-af36aefd712e",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/48100221-adb3-42b5-b6e1-30cf5feb35a8",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/7ffc5bf4-4157-4ad3-8d23-2d44fa2f9ae2",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/bbbb5b5d-1340-49ea-a8d4-a2dba93312ef",
+                "https://data.norminstituutbomen.nl/hb/id/domeinwaarden/82b915cc-e1e3-4b8a-920b-b3586099cf79"
+              ]
+            },
+            "Description": {
+              "type": "string",
+              "enum": [
+                "Begeleidingssnoei",
+                "Onderhoudssnoei",
+                "Snoei bomen buiten segmentgebied",
+                "Scheren",
+                "Terugzetten intensief",
+                "Terugzetten extensief",
+                "Knotten",
+                "Kandelaberen",
+                "Kandelaren",
+                "Toppen",
+                "Breuksnoei (fracture pruning)",
+                "Afzetten stoof",
+                "Innemen kroon",
+                "Uitlichten kroonrand",
+                "Fruitsnoei",
+                "Veteranensnoei",
+                "Terugzetten op stam",
+                "Ecologisch beheer (maatwerk)",
+                "Verwijderen klimbeplanting van de stam",
+                "Verwijderen klimbeplanting van/uit bomen",
+                "Doorzagen klimbeplanting van stam",
+                "Boompalen leveren en aanbrengen",
+                "Boompalen controleren en/of bijstellen",
+                "Boompalen verwijderen",
+                "Kluitverankering leveren en aanbrengen",
+                "Kluitverankering controleren en/of bijstellen",
+                "Kluitverankering verwijderen",
+                "Kroonverankering leveren en aanbrengen",
+                "Kroonverankering controleren en/of bijstellen",
+                "Kroonverankering verwijderen",
+                "Boomspiegel vergroten",
+                "Herstel bestratingsopdruk",
+                "Verwijderen boomrooster",
+                "Aanpassen boomrooster",
+                "Vellen bomen",
+                "Vellen bomen incl. schillen stobbe",
+                "Stobbe frezen",
+                "Stobbe rooien",
+                "Onderbeplanting verwijderen"
+              ]
+            }
+          },
+          "required": [
+            "GUID",
+            "Uri",
+            "Description"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "required": [
+    "GUID",
+    "UriMetadata",
+    "Value"
+  ],
+  "additionalProperties": false
+}

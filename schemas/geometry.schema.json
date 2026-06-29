@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Geometry Schema (GeoJSON Point, EPSG:28992)",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "Point",
+        "LineString",
+        "Polygon",
+        "MultiPoint",
+        "MultiLineString",
+        "MultiPolygon"
+      ]
+    },
+    "crs": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "name"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "properties"
+      ]
+    },
+    "coordinates": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "type",
+    "coordinates"
+  ]
+}
