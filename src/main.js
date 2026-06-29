@@ -118,7 +118,16 @@ worker.onmessage = (event) => {
 };
 
 worker.onerror = (event) => {
-  setStatus(`Validatie-engine fout: ${event.message}`);
+  const parts = [
+    event.message,
+    event.filename,
+    event.lineno ? `regel ${event.lineno}` : '',
+  ].filter(Boolean);
+
+  const detail = parts.length > 0 ? parts.join(' | ') : 'Onbekende workerfout';
+  setStatus(
+    `Validatie-engine fout: ${detail}. Controleer of de site op de gh-pages build draait.`,
+  );
 };
 
 worker.onmessageerror = () => {
