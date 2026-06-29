@@ -11,7 +11,7 @@
     "frontend:preview": "vite preview",
     "build": "npm run frontend:build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --add"
   },
   "dependencies": {
     "ajv": "^8.17.1",
