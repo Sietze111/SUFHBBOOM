@@ -117,6 +117,14 @@ worker.onmessage = (event) => {
   renderResult(payload);
 };
 
+worker.onerror = (event) => {
+  setStatus(`Validatie-engine fout: ${event.message}`);
+};
+
+worker.onmessageerror = () => {
+  setStatus("Validatie-engine kon antwoord niet verwerken.");
+};
+
 fileInput.addEventListener("change", (event) => {
   const file = event.target.files && event.target.files[0];
   handleFile(file);
